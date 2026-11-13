@@ -8,7 +8,7 @@ const tasks = [
 
 let nextId = 3;
 
-const server = createServer(async (req, res) => {
+export const server = createServer(async (req, res) => {
     console.log(req.method, req.url);
     res.setHeader('Content-Type', 'application/json')
 
@@ -180,6 +180,7 @@ const server = createServer(async (req, res) => {
 
 });
 
-server.listen(3000, '127.0.0.1', () => {
-    console.log('Server running at http://127.0.0.1:3000')
-})
+// server.listen(3000, '127.0.0.1', () => {
+//     console.log('Server running at http://127.0.0.1:3000')
+// })
+
